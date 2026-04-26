@@ -1,0 +1,62 @@
+site_name: Fancy Bread
+site_description: Developer tooling, workflows, and AI-assisted software engineering.
+site_url: https://fancybread.github.io
+repo_url: https://github.com/fancy-bread
+repo_name: fancy-bread
+
+theme:
+  name: material
+  logo: assets/logo.png
+  favicon: assets/logo.png
+  palette:
+    scheme: slate
+    primary: black
+    accent: grey
+  font:
+    text: Inter
+    code: JetBrains Mono
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - search.highlight
+    - search.suggest
+    - content.code.copy
+
+extra_css:
+  - stylesheets/extra.css
+
+nav:
+  - Home: index.md
+  - About: about.md
+  - Projects:
+    - Overview: projects/index.md
+    - Bureau: projects/bureau.md
+    - SDLC Workflow Skills: projects/sdlc-workflow-skills.md
+    - Agent Context Explorer: projects/agent-context-explorer.md
+
+plugins:
+  - search
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.tabbed:
+      alternate_style: true
+  - attr_list
+  - md_in_html
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - toc:
+      permalink: true
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/fancy-bread
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/in/paul-marcotte-b7a0678/
