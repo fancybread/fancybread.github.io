@@ -1,10 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&display=swap');
+
 .md-header {
   background: #000000;
 }
 
 .md-header__title {
+  font-family: 'Playfair Display', Georgia, serif;
   color: #ffffff;
-  font-weight: 600;
+  font-weight: 700;
   letter-spacing: 0.04em;
 }
 
@@ -35,16 +38,19 @@
 /* Hero banner */
 .hero {
   text-align: center;
-  padding: 5rem 2rem;
+  padding: 6rem 2rem;
   margin: -0.8rem -2rem 3rem -2rem;
-  background: linear-gradient(160deg, #050505 0%, #181818 50%, #050505 100%);
+  background:
+    linear-gradient(to bottom, rgba(0,0,0,0.55) 0%, rgba(0,0,0,0.35) 100%),
+    url('../assets/sara-julie-yoFIPu3PpgU-unsplash.jpg') center/cover no-repeat;
   border-bottom: 1px solid transparent;
   border-image: linear-gradient(135deg, #1c1c1c 0%, #6b6b6b 38%, #c0c0c0 50%, #6b6b6b 62%, #1c1c1c 100%) 1;
 }
 
 .hero h1 {
-  font-size: 3rem;
-  font-weight: 700;
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 4rem;
+  font-weight: 900;
   margin-bottom: 1rem;
   color: #ffffff;
   border: none;

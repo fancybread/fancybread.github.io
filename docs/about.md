@@ -6,7 +6,7 @@ I'm Paul Marcotte — software developer and toolbuilder based in Canada.
 
 I build developer tooling: editor extensions, workflow automation, and the scaffolding that makes AI assistants useful for real engineering work. Most of that work lives in the [fancy-bread](https://github.com/fancy-bread) GitHub org.
 
-One thread running through it is [ASDLC](projects/asdlc.md) — a spec-first methodology for structured, AI-assisted software development.
+One thread running through it is ASDLC — a spec-first methodology for structured, AI-assisted software development.
 
 ## Stack
 
