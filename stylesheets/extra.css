@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&display=swap');
+
+.md-header {
+  background: #000000;
+}
+
+.md-header__title {
+  font-family: 'Playfair Display', Georgia, serif;
+  color: #ffffff;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+}
+
+.md-tabs {
+  background: linear-gradient(
+    135deg,
+    #111111 0%,
+    #2e2e2e 20%,
+    #6b6b6b 38%,
+    #c0c0c0 50%,
+    #6b6b6b 62%,
+    #2e2e2e 80%,
+    #111111 100%
+  );
+}
+
+.md-tabs__link {
+  color: #ffffff;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.7);
+}
+
+.md-tabs__link--active,
+.md-tabs__link:hover {
+  color: #ffffff;
+  opacity: 1;
+}
+
+/* Hero banner */
+.hero {
+  text-align: center;
+  padding: 6rem 2rem;
+  margin: -0.8rem -2rem 3rem -2rem;
+  background:
+    linear-gradient(to bottom, rgba(0,0,0,0.55) 0%, rgba(0,0,0,0.35) 100%),
+    url('../assets/sara-julie-yoFIPu3PpgU-unsplash.jpg') center/cover no-repeat;
+  border-bottom: 1px solid transparent;
+  border-image: linear-gradient(135deg, #1c1c1c 0%, #6b6b6b 38%, #c0c0c0 50%, #6b6b6b 62%, #1c1c1c 100%) 1;
+}
+
+.hero h1 {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 4rem;
+  font-weight: 900;
+  margin-bottom: 1rem;
+  color: #ffffff;
+  border: none;
+  letter-spacing: 0.02em;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  color: rgba(255, 255, 255, 0.75);
+  max-width: 600px;
+  margin: 0 auto 2rem auto;
+  line-height: 1.7;
+}
+
+.hero .md-button {
+  margin: 0.4rem;
+  font-size: 0.95rem;
+  padding: 0.65rem 1.75rem;
+}
+
+.hero .md-button--primary {
+  background: linear-gradient(135deg, #3a3a3a 0%, #888 45%, #c0c0c0 50%, #888 55%, #3a3a3a 100%);
+  color: #000000;
+  border: none;
+  font-weight: 600;
+}
+
+.hero .md-button--primary:hover {
+  background: linear-gradient(135deg, #4a4a4a 0%, #999 45%, #d0d0d0 50%, #999 55%, #4a4a4a 100%);
+  color: #000000;
+}
+
+.hero .md-button:not(.md-button--primary) {
+  background: transparent;
+  color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(192, 192, 192, 0.35);
+}
+
+.hero .md-button:not(.md-button--primary):hover {
+  background: rgba(192, 192, 192, 0.08);
+  border-color: rgba(192, 192, 192, 0.6);
+  color: #ffffff;
+}
+
+@media screen and (max-width: 768px) {
+  .hero h1 { font-size: 2rem; }
+  .hero p  { font-size: 1rem; }
+}
